@@ -140,7 +140,7 @@ export default function Home() {
     // Join the words with a space to form the final string
     return words.join(" ");
   }
-  const getTextColor = (text) => {
+  const getTextColor = (text: string) => {
     // Check if the text contains '...' (shortened word)
     if (text.includes("...")) {
       return "text-blue-500"; // Blue for shortened words
@@ -162,9 +162,9 @@ export default function Home() {
     >
       <div
         style={{ backgroundColor: "#2d2e30" }}
-        className="text-white rounded-lg bg-gray-800 shadow-lg p-6 w-[78%] h-[70vh]"
+        className="text-white rounded-lg bg-gray-800 relative shadow-lg p-6 md:w-[78%] w-[90%] h-[70vh]"
       >
-        <div className="overflow-auto text-sm h-[85%]">
+        <div className="overflow-auto text-sm h-[90%] w-full">
           <table className="w-full table-auto">
             <thead>
               <tr className=" font-semibold text-gray-400">
@@ -323,10 +323,11 @@ export default function Home() {
           </table>
         </div>
         {/* Pagination and Rows per Page Controls in the Footer */}
-        <div className="flex w-[100%] justify-end items-center mt-4 py-2 pr-4">
-          <div className="flex justify-end gap-4 items-center rounded-b-lg px-4">
+        
+        <div className="flex w-[90%] ml-[-10px] absolute md:bottom-1 md:right-4 bottom-[2px] md:justify-end justify-center items-center p-2">
+          <div className="flex w-[98%] overflow-auto p-2 whitespace-nowrap md:justify-end justify-center gap-4 items-center ">
             {/* Rows Per Page Selector */}
-            <div className="flex items-center gap-2">
+            <div className="flex whitespace-nowrap px-2 items-center gap-2">
               <span>Rows per page:</span>
 
               <DropdownMenu>
