@@ -162,7 +162,7 @@ export default function Home() {
     >
       <div
         style={{ backgroundColor: "#2d2e30" }}
-        className="text-white rounded-lg bg-gray-800 shadow-lg p-6 w-[78%] h-[600px]"
+        className="text-white rounded-lg bg-gray-800 shadow-lg p-6 w-[78%] h-[70vh]"
       >
         <div className="overflow-auto text-sm h-[85%]">
           <table className="w-full table-auto">
