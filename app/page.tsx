@@ -12,7 +12,7 @@ import {
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [rowsPerPage, setRowsPerPage] = useState(15);
+  const [rowsPerPage, setRowsPerPage] = useState(25);
   const rowsOptions = [15, 25, 50];
 
   const totalPages = Math.ceil(transactionData.length / rowsPerPage);
