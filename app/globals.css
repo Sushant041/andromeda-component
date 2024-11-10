@@ -7,10 +7,10 @@ body {
 }
 
 /* Set the width of the scrollbar */
-::-webkit-scrollbar {
-  width: 12px;         /* Width of vertical scrollbar */
-  height: 12px;        /* Height of horizontal scrollbar */
-}
+/* ::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;  
+} */
 
 /* Style the scrollbar track (background) */
 ::-webkit-scrollbar-track {
