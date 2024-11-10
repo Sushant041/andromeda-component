@@ -162,7 +162,7 @@ export default function Home() {
     >
       <div
         style={{ backgroundColor: "#2d2e30" }}
-        className="text-white rounded-lg bg-gray-800 relative shadow-lg p-6 md:w-[78%] w-[90%] h-[70vh]"
+        className="text-white rounded-lg bg-gray-800 relative shadow-lg p-6 md:w-[78%] w-[90%] h-[70vh] pb-[2rem]"
       >
         <div className="overflow-auto text-sm h-[90%] w-full">
           <table className="w-full table-auto">
@@ -324,10 +324,10 @@ export default function Home() {
         </div>
         {/* Pagination and Rows per Page Controls in the Footer */}
         
-        <div className="flex w-[90%] ml-[-10px] absolute md:bottom-1 md:right-4 bottom-[2px] md:justify-end justify-center items-center p-2">
-          <div className="flex w-[98%] overflow-auto p-2 whitespace-nowrap md:justify-end justify-center gap-4 items-center ">
+        <div className="  overflow-auto p-2 ">
+          <div className="flex p-2 justify-end  gap-4 items-center min-w-[500px]  ">
             {/* Rows Per Page Selector */}
-            <div className="flex whitespace-nowrap px-2 items-center gap-2">
+            <div className="flex whitespace-nowrap px-2 items-center gap-2 ">
               <span>Rows per page:</span>
 
               <DropdownMenu>
@@ -370,7 +370,7 @@ export default function Home() {
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
-            <div className="flex items-center gap-3 space-x-2">
+            <div className="flex items-center gap-3 space-x-2 ">
               <button
                 onClick={handlePreviousPage}
                 disabled={currentPage === 1}
